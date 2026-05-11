@@ -1,22 +1,62 @@
-Online Shopping Delivery System – Composite Design Pattern 
+# Online Shopping Delivery System – Composite Design Pattern
 
-This project demonstrates the Composite Design Pattern in Java using an online delivery system.
+## Project Overview
+This project demonstrates the Composite Design Pattern in Java using an online shopping delivery system.
 
-A delivery order is built as a tree structure containing:
+It focuses on representing hierarchical structures in a simple and scalable way and calculating total order price.
 
-* Products (leaf nodes)
-* Boxes (composite nodes) that can contain products and other boxes
+---
 
-Each box can include smaller boxes, creating multiple levels of nesting.
+## Design Pattern Used
+### Composite Design Pattern (Structural Pattern)
 
-The system calculates the total price of all products by treating both products and boxes through a common interface (DeliveryComponent), allowing uniform handling and simple recursive price calculation.
+---
 
-Key Benefits:
+## Case Study: Delivery System Structure
 
-* Supports nested structures easily
-* Treats single items and groups uniformly
-* Simplifies total price calculation
-* Improves scalability and code clarity
+The system consists of:
 
-Technologies:
-Java, OOP principles
+- Products (Leaf nodes)
+- Boxes (Composite nodes)
+
+### Box Structure
+A box can contain:
+- Products
+- Smaller boxes
+- Nested boxes (multi-level structure)
+
+---
+
+## Main Objective
+Calculate the total price of all products inside the main box, regardless of nesting depth.
+
+---
+
+## Why Composite Pattern?
+
+- Treats products and boxes the same way
+- Simplifies recursive calculations
+- Removes complex conditional logic
+- Improves scalability
+
+---
+
+## System Benefits
+
+- Handles nested structures easily
+- Clean and reusable design
+- Uniform component handling
+- Simple price calculation
+
+---
+
+## Technologies Used
+
+- Java
+- OOP Principles
+- Composite Design Pattern
+
+---
+
+## Summary
+This project shows how Composite Pattern simplifies hierarchical systems by treating individual objects and groups uniformly.
